@@ -18,6 +18,7 @@ class EmailParser
         if email.include?(' ')
           array_temp = email.split(' ')
           email_array.delete(email)
+          email_array.insert(0,array_temp[0])
     else
       email_array = self.email_list.split(' ')
     end
