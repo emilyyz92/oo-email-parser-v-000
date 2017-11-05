@@ -16,7 +16,7 @@ class EmailParser
       email_array = self.email_list.split(', ')
       email_array.each do |email|
         if email.include?(' ')
-          email = email.split(' ')
+          array_temp = email.split(' ')
     else
       email_array = self.email_list.split(' ')
     end
