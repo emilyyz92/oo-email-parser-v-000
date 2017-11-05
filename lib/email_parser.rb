@@ -19,7 +19,7 @@ class EmailParser
           array_temp = email.split(' ')
           email_array.delete(email)
           array_temp.each_with_index do |email2,index|
-            email_array.insert(0,email2)
+            email_array.insert(index+1,email2)
           end
         end
       end
