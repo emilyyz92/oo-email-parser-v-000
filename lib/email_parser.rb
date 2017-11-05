@@ -18,8 +18,10 @@ class EmailParser
         if email.include?(' ')
           array_temp = email.split(' ')
           email_array.delete(email)
-          email_array.insert(0,array_temp[0])
-          email_array.insert(0,array_temp[1])
+          array_temp.each do |email2|
+            email_array.insert(0,email2)
+          end
+        end
     else
       email_array = self.email_list.split(' ')
     end
