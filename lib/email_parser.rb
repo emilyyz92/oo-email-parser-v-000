@@ -15,7 +15,8 @@ class EmailParser
     if self.email_list include?(',')
       email_array = self.email_list.split(', ')
     else
-      email_array = self.email_list.split('.com ')
+      email_array = self.email_list.split(' ')
+    end
     if email_array.uniq.length == email_array.length
       email_array
     else
