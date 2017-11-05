@@ -22,6 +22,7 @@ class EmailParser
             email_array.insert(0,email2)
           end
         end
+      end
     else
       email_array = self.email_list.split(' ')
     end
