@@ -18,7 +18,7 @@ class EmailParser
         if email.include?(' ')
           array_temp = email.split(' ')
           email_array.delete(email)
-          array_temp.each do |email2|
+          array_temp.each_with_index do |email2,index|
             email_array.insert(0,email2)
           end
         end
