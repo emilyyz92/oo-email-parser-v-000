@@ -17,6 +17,7 @@ class EmailParser
       email_array.each do |email|
         if email.include?(' ')
           array_temp = email.split(' ')
+          email_array.delete(email)
     else
       email_array = self.email_list.split(' ')
     end
