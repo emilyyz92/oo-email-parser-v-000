@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    if self.email_list include?(',')
+    if self.email_list.include?(',')
       email_array = self.email_list.split(', ')
     else
       email_array = self.email_list.split(' ')
